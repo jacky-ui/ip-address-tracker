@@ -1,1 +1,9 @@
-/*# sourceMappingURL=Header.css.map */
+.header {
+  background-image: url("../../assets/images/pattern-bg-desktop.png");
+  padding: 2rem;
+  text-align: center;
+}
+.header__title {
+  font-size: 1rem;
+  color: #FFFFFF;
+}/*# sourceMappingURL=Header.css.map */

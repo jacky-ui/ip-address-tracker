@@ -2,8 +2,8 @@ import './Header.scss';
 
 function Header() {
     return(
-        <header>
-            <h1>IP ADDRESS TRACKER</h1>
+        <header className='header'>
+            <h1 className='header__title'>IP ADDRESS TRACKER</h1>
         </header>
     )
 };
