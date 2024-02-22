@@ -7,13 +7,13 @@
     &__input {
         padding: 0.5rem;
         width: 21rem;
-        border-radius: 9px 0px 0px 8px;
+        border-radius: 9px;
         border: none;
         
         @include mobile {
             font-size: 1rem;
             padding: 4%;
-            border-radius: 14px 0px 0px 14px;
+            border-radius: 14px;
             width: 60vw;
             min-width: 220px;
         }
@@ -32,6 +32,7 @@
         height: 100%;
         position: absolute !important;
         border-radius: 0px 9px 9px 0px;
+        right: 0%;
 
         @include mobile {
             border-radius: 0px 14px 14px 0px;
