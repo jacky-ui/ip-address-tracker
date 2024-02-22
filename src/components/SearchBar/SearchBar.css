@@ -1,4 +1,24 @@
 @font-face {
   font-family: "Rubik";
   src: url("https://fonts.google.com/specimen/Rubik");
+}
+.form {
+  position: relative;
+}
+.form__input {
+  padding: 0.5rem;
+  width: 21rem;
+  border-radius: 9px 0px 0px 8px;
+  border: none;
+}
+.form__button {
+  background-image: url("../../assets/images/icon-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  position: absolute !important;
+  border-radius: 0px 9px 9px 0px;
 }/*# sourceMappingURL=SearchBar.css.map */

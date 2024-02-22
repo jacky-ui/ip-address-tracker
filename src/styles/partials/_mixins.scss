@@ -1,5 +1,8 @@
 @use './variables' as *;
 
+// 
+
+// Screen point mixins
 @mixin mobile {
     @media screen and (max-width: $mobile-breakpoint) {
         @content;
