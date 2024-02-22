@@ -9,6 +9,14 @@
         width: 21rem;
         border-radius: 9px 0px 0px 8px;
         border: none;
+        
+        @include mobile {
+            font-size: 1rem;
+            padding: 4%;
+            border-radius: 14px 0px 0px 14px;
+            width: 60vw;
+            min-width: 220px;
+        }
 
         &:hover {
             cursor: pointer;
@@ -24,6 +32,10 @@
         height: 100%;
         position: absolute !important;
         border-radius: 0px 9px 9px 0px;
+
+        @include mobile {
+            border-radius: 0px 14px 14px 0px;
+        }
 
         &:hover {
             transition: 0.5s;

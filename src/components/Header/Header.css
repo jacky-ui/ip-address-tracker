@@ -14,9 +14,20 @@
   gap: 1rem;
   text-align: center;
 }
+@media screen and (max-width: 760px) {
+  .header {
+    background-image: url("../../assets/images/pattern-bg-mobile.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 14rem;
+  }
+}
 .header__title {
   font-size: 1.4rem;
   font-weight: 500;
   color: #FFFFFF;
   margin: 0;
+  text-align: center;
+  margin-left: 2rem;
 }/*# sourceMappingURL=Header.css.map */
