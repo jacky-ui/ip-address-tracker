@@ -38,6 +38,7 @@
 @media screen and (max-width: 760px) {
   .form__button {
     border-radius: 0px 14px 14px 0px;
+    width: 3rem;
   }
 }
 .form__button:hover {
