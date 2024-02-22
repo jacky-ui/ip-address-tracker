@@ -3,7 +3,6 @@ import './styles/App.css';
 function App() {
   return (
     <>
-      <h1>HELOO WORLD BB</h1>
     </>
   );
 }
