@@ -7,3 +7,8 @@ $mobile-breakpoint: 760px;
 $tablet-breakpointmin: 761px;
 $tablet-breakpointmax: 1023px;
 $desktop-breakpoint: 1024px;
+
+@font-face {
+    font-family: "Rubik";
+    src: url('https://fonts.google.com/specimen/Rubik');
+  }

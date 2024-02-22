@@ -1,3 +1,5 @@
+@use '../styles/partials/variables' as *;
+
 * {
     box-sizing: border-box;
     &::before {
@@ -10,9 +12,15 @@
   
 body {
     margin: 0;
-    @font-face {
-      font-family: Rubik;
-      src: url('https://fonts.google.com/specimen/Rubik');
-    }
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
 }
+
+input {
+  font-family: "Rubik", sans-serif;  
+
+  &::placeholder {
+    font-family: "Rubik", sans-serif;
+  }
+}
+
