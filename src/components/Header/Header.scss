@@ -27,5 +27,9 @@
         color: $white;
         margin: 0;
         text-align: center;
+
+        @include mobile {
+            font-size: 2rem;
+        }
     }
 }
