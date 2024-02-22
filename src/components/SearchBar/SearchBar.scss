@@ -9,6 +9,10 @@
         width: 21rem;
         border-radius: 9px 0px 0px 8px;
         border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__button {
         background-image: url('../../assets/images/icon-arrow.svg');
@@ -17,8 +21,13 @@
         background-color: black;
         border: none;
         width: 2rem;
-        height: 2rem;
+        height: 100%;
         position: absolute !important;
         border-radius: 0px 9px 9px 0px;
+
+        &:hover {
+            transition: 0.5s;
+            @include hover;
+        }
     }
 }

@@ -1,6 +1,10 @@
 @use './variables' as *;
 
-// 
+// Hover state
+@mixin hover {
+    cursor: pointer;
+    background-color: $dark-gray;
+}
 
 // Screen point mixins
 @mixin mobile {

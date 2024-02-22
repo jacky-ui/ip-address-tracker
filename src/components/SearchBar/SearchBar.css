@@ -11,6 +11,9 @@
   border-radius: 9px 0px 0px 8px;
   border: none;
 }
+.form__input:hover {
+  cursor: pointer;
+}
 .form__button {
   background-image: url("../../assets/images/icon-arrow.svg");
   background-position: center;
@@ -18,7 +21,12 @@
   background-color: black;
   border: none;
   width: 2rem;
-  height: 2rem;
+  height: 100%;
   position: absolute !important;
   border-radius: 0px 9px 9px 0px;
+}
+.form__button:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 17%);
 }/*# sourceMappingURL=SearchBar.css.map */
