@@ -1,0 +1,47 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.form {
+    position: relative;
+
+    &__input {
+        padding: 0.5rem;
+        width: 21rem;
+        border-radius: 9px;
+        border: none;
+        
+        @include mobile {
+            font-size: 1rem;
+            padding: 4%;
+            border-radius: 14px;
+            width: 60vw;
+            min-width: 220px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__button {
+        background-image: url('../../assets/images/icon-arrow.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+        border: none;
+        width: 2rem;
+        height: 100%;
+        position: absolute !important;
+        border-radius: 0px 9px 9px 0px;
+        right: 0%;
+
+        @include mobile {
+            border-radius: 0px 14px 14px 0px;
+            width: 3rem;
+        }
+
+        &:hover {
+            transition: 0.5s;
+            @include hover;
+        }
+    }
+}

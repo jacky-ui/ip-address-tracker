@@ -1,0 +1,26 @@
+@use './variables' as *;
+
+// Hover state
+@mixin hover {
+    cursor: pointer;
+    background-color: $dark-gray;
+}
+
+// Screen point mixins
+@mixin mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet-breakpointmax) and (min-width: $tablet-breakpointmin) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
