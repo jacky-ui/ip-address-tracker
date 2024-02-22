@@ -1,5 +1,4 @@
 import './SearchBar.scss';
-import submitArrow from '../../assets/images/icon-arrow.svg';
 
 function SearchBar() {
     return(
