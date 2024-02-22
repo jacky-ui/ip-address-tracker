@@ -1,3 +1,27 @@
 $white:#FFFFFF;
 $black:#1C1C1C;
 $header:#A9A9A9;
+
+// variables for breakpoints
+$mobile-breakpoint: 760px;
+$tablet-breakpointmin: 761px;
+$tablet-breakpointmax: 1023px;
+$desktop-breakpoint: 1024px;
+
+@mixin mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet-breakpointmax) and (min-width: $tablet-breakpointmin) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
