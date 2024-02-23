@@ -16,14 +16,18 @@ body {
   margin: 0;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 input {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
+  font-weight: 500;
 }
 input::-moz-placeholder {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
+  font-weight: 500;
 }
 input::placeholder {
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik";
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

@@ -1,2 +1,23 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/variables' as *;
+
+.locationBar {
+    background-color: $white;
+    border-radius: 9px;
+    margin: auto;
+    width: 80%;
+    max-width: 55rem;
+    margin-top: -4rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+
+    & div {
+        width: 25%;
+    }
+
+    &__title {
+        font-size: 0.9rem;
+        color: $header;
+    }
+}

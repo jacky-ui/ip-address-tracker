@@ -1,4 +1,22 @@
 @font-face {
   font-family: "Rubik";
   src: url("https://fonts.google.com/specimen/Rubik");
+}
+.locationBar {
+  background-color: #FFFFFF;
+  border-radius: 9px;
+  margin: auto;
+  width: 80%;
+  max-width: 55rem;
+  margin-top: -4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.locationBar div {
+  width: 25%;
+}
+.locationBar__title {
+  font-size: 0.9rem;
+  color: #A9A9A9;
 }/*# sourceMappingURL=LocationBar.css.map */
