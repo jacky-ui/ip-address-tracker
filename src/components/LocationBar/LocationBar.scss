@@ -5,19 +5,53 @@
     background-color: $white;
     border-radius: 9px;
     margin: auto;
-    width: 80%;
-    max-width: 55rem;
+    max-width: 50rem;
     margin-top: -4rem;
     padding: 2rem;
     display: flex;
-    justify-content: space-around;
+
+    @include mobile {
+        flex-direction: column;
+    }
 
     & div {
         width: 25%;
     }
 
     &__title {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: $header;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+    }
+}
+
+.padding-border-right {
+    padding-right: 2rem;
+    border-right: 1px solid $header;
+
+    @include mobile {
+        padding: unset;
+        border: unset;
+    }
+}
+
+.padding-border-middle {
+    padding: 0 2rem;
+    border-right: 1px solid $header;
+
+    @include mobile {
+        padding: unset;
+        border: unset;
+    }
+}
+
+.padding-all {
+    padding: 0 2rem;
+
+    @include mobile {
+        padding: unset;
     }
 }
