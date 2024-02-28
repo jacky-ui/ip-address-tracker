@@ -1,0 +1,30 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.padding-border-right {
+    padding-right: 2rem;
+    border-right: 1px solid $header;
+
+    @include mobile {
+        padding: unset;
+        border: unset;
+    }
+}
+
+.padding-border-middle {
+    padding: 0 2rem;
+    border-right: 1px solid $header;
+
+    @include mobile {
+        padding: unset;
+        border: unset;
+    }
+}
+
+.padding-all {
+    padding: 0 2rem;
+
+    @include mobile {
+        padding: unset;
+    }
+}

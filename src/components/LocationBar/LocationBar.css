@@ -36,35 +36,4 @@
 }
 .locationBar__text {
   font-size: 1.2rem;
-}
-
-.padding-border-right {
-  padding-right: 2rem;
-  border-right: 1px solid #A9A9A9;
-}
-@media screen and (max-width: 760px) {
-  .padding-border-right {
-    padding: unset;
-    border: unset;
-  }
-}
-
-.padding-border-middle {
-  padding: 0 2rem;
-  border-right: 1px solid #A9A9A9;
-}
-@media screen and (max-width: 760px) {
-  .padding-border-middle {
-    padding: unset;
-    border: unset;
-  }
-}
-
-.padding-all {
-  padding: 0 2rem;
-}
-@media screen and (max-width: 760px) {
-  .padding-all {
-    padding: unset;
-  }
 }/*# sourceMappingURL=LocationBar.css.map */
