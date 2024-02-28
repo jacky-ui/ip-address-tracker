@@ -14,10 +14,21 @@
 @media screen and (max-width: 760px) {
   .locationBar {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: unset;
+    min-width: 16rem;
+    width: 89%;
+    margin-top: -12rem;
   }
 }
 .locationBar div {
   width: 25%;
+}
+@media screen and (max-width: 760px) {
+  .locationBar div {
+    width: unset;
+  }
 }
 .locationBar__title {
   font-size: 0.8rem;
