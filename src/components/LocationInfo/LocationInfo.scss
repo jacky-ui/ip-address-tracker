@@ -23,8 +23,4 @@
 
 .padding-all {
     padding: 0 2rem;
-
-    @include mobile {
-        padding: unset;
-    }
 }
