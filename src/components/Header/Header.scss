@@ -12,6 +12,8 @@
     align-items: center;
     gap: 1rem;
     text-align: center;
+    position: relative;
+    z-index: 2;
 
     @include mobile {
         background-image: url('../../assets/images/pattern-bg-mobile.png');

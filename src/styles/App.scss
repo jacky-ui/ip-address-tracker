@@ -1,6 +1,8 @@
 .map {
     overflow: hidden;
-    margin-top: -4rem;
+    margin-top: -7rem;
+    position: relative;
+    z-index: 1;
 }
 
 // override styling from leaflet because map disappears
@@ -8,4 +10,8 @@
     overflow: unset;
     height: 100vh;
     width: 100vw;
+}
+
+.leaflet-control-container {
+    display: none;
 }

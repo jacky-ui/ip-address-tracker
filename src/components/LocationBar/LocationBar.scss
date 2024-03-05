@@ -9,6 +9,8 @@
     margin-top: -4rem;
     padding: 2rem;
     display: flex;
+    position: relative;
+    z-index: 2;
 
     @include mobile {
         flex-direction: column;
