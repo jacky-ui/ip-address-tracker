@@ -1,0 +1,39 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+.locationBar {
+    background-color: $white;
+    border-radius: 9px;
+    margin: auto;
+    max-width: 50rem;
+    margin-top: -4rem;
+    padding: 2rem;
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: unset;
+        min-width: 16rem;
+        width: 89%;
+        margin-top: -12rem;
+    }
+
+    & div {
+        width: 25%;
+
+        @include mobile {
+            width: unset;
+        }
+    }
+
+    &__title {
+        font-size: 0.8rem;
+        color: $header;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+    }
+}
