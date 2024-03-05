@@ -1,0 +1,11 @@
+.map {
+    overflow: hidden;
+    margin-top: -4rem;
+}
+
+// override styling from leaflet because map disappears
+.leaflet-container {
+    overflow: unset;
+    height: 100vh;
+    width: 100vw;
+}

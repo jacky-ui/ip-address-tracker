@@ -1,1 +1,10 @@
-/*# sourceMappingURL=App.css.map */
+.map {
+  overflow: hidden;
+  margin-top: -4rem;
+}
+
+.leaflet-container {
+  overflow: unset;
+  height: 100vh;
+  width: 100vw;
+}/*# sourceMappingURL=App.css.map */
