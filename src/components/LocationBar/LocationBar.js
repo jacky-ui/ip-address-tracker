@@ -29,7 +29,6 @@ function LocationBar() {
 
     let checkForClass = (propInfo) => {
         let paddingClass = ''
-        console.log(propInfo === 'ISP')
         if(propInfo === 'IP ADDRESS') {
             return paddingClass = 'padding-border-right';
         } else if(propInfo === 'TIMEZONE' || propInfo === 'LOCATION') {
