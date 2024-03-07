@@ -1,8 +1,15 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
 .map {
     overflow: hidden;
     margin-top: -7rem;
     position: relative;
     z-index: 1;
+
+    @include mobile {
+        margin-top: -14rem;
+    }
 }
 
 // override styling from leaflet because map disappears
@@ -12,6 +19,10 @@
     width: 100vw;
 }
 
-.leaflet-control-container {
-    display: none;
+.leaflet-top {
+    top: 20%;
+
+    @include mobile {
+        top: 32%;
+    }
 }

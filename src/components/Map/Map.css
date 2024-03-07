@@ -1,8 +1,17 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("https://fonts.google.com/specimen/Rubik");
+}
 .map {
   overflow: hidden;
   margin-top: -7rem;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 760px) {
+  .map {
+    margin-top: -14rem;
+  }
 }
 
 .leaflet-container {
@@ -11,6 +20,11 @@
   width: 100vw;
 }
 
-.leaflet-control-container {
-  display: none;
+.leaflet-top {
+  top: 20%;
+}
+@media screen and (max-width: 760px) {
+  .leaflet-top {
+    top: 32%;
+  }
 }/*# sourceMappingURL=Map.css.map */
