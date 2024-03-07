@@ -8,15 +8,15 @@ import Icon from '../Icon/Icon';
 
 import './Map.scss';
 
-function Map() {
+function Map({ lat, long }) {
     return(
         <section className='map'>
-            <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+            <MapContainer center={[lat, long]} zoom={13} scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <Marker icon={Icon} position={[51.505, -0.09]}>
+                <Marker icon={Icon} position={[lat, long]}>
                     <Popup>
                         You are here.
                     </Popup>

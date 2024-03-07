@@ -2,7 +2,6 @@ import LocationInfo from '../LocationInfo/LocationInfo';
 import './LocationBar.scss';
 
 function LocationBar({ locationDefault }) {
-    console.log(locationDefault)
     let checkForClass = (propInfo) => {
         let paddingClass = ''
         if(propInfo === 'IP ADDRESS') {
