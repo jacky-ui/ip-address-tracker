@@ -6,11 +6,7 @@ import Map from './components/Map/Map';
 import './styles/App.css';
 
 function App() {
-  const [addressData, setAddressData] = useState(null)
-  const [ipAddress, setipAddress] = useState('192.212.174.101');
-  const [location, setlocation] = useState('Brooklyn, NY 10001');
-  const [timezone, settimezone] = useState('UTC -05:00');
-  const [isp, setisp] = useState('SPACEX Starlink');   
+  const [addressData, setAddressData] = useState(null) 
 
   const API_WEBSITE = `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_API_KEY}`;
 
@@ -22,30 +18,12 @@ function App() {
         console.log(addressData.location)
       })
   }, []);
-  
-  let locationDefault = [
-    {
-        title: 'IP ADDRESS',
-        locationInfo: ipAddress
-    },
-    {
-        title: 'LOCATION',
-        locationInfo: location
-    },
-    {
-        title: 'TIMEZONE',
-        locationInfo: timezone
-    },
-    {
-        title: 'ISP',
-        locationInfo: isp
-    },
-]
+
   return (
     <>
       <Header />
       <LocationBar 
-        locationDefault={locationDefault}
+        addressInfo={addressData}
       />
       <Map 
         lat={addressData.location.lat}
