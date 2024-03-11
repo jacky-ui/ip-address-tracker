@@ -1,14 +1,22 @@
 // Leaflet imports
+import { useEffect } from 'react';
 import { MapContainer } from 'react-leaflet/MapContainer';
 import { TileLayer } from 'react-leaflet/TileLayer';
 import { useMap } from 'react-leaflet/hooks';
 import { Marker } from 'react-leaflet';
 import { Popup } from 'react-leaflet';
 import Icon from '../Icon/Icon';
-
 import './Map.scss';
 
-function Map({ lat, long }) {
+function Map({ lat, long, mapPosition }) {
+    const map = useMap();
+
+    useEffect(() => {
+        Map.flyTo(mapPosition, 13, {
+            animate: true
+        })
+    }, [map, mapPosition])
+
     return(
         <section className='map'>
             <MapContainer center={[lat, long]} zoom={13} scrollWheelZoom={true}>
