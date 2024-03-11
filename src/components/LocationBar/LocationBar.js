@@ -25,7 +25,7 @@ function LocationBar({ addressInfo }) {
                 />  
                 <LocationInfo 
                     key={addressInfo.isp}
-                    classProp='padding-border-all'
+                    classProp='padding-all'
                     title='ISP'
                     locationInfo={addressInfo.isp}
                 />                                             
