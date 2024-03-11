@@ -2,7 +2,6 @@ import LocationInfo from '../LocationInfo/LocationInfo';
 import './LocationBar.scss';
 
 function LocationBar({ addressInfo }) {
-    console.log(addressInfo.ip)
     return(
             <section className='locationBar'>
                 <LocationInfo 

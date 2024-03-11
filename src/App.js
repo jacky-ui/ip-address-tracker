@@ -8,7 +8,6 @@ import './styles/App.css';
 
 function App() {
   const [addressData, setAddressData] = useState(address); 
-  const position = [address.location.lat, address.location.lng];
 
   const API_WEBSITE = `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_API_KEY}`;
 
@@ -29,9 +28,7 @@ function App() {
         addressInfo={addressData}
     />
       <Map 
-        mapPosition={position}
-        lat={addressData.location.lat}
-        long={addressData.location.lng}
+        latLong={addressData}
       />
     </>
   );
