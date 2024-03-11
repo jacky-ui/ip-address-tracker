@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import Header from './components/Header/Header';
 import LocationBar from './components/LocationBar/LocationBar';
@@ -9,22 +9,24 @@ import './styles/App.css';
 function App() {
   const [addressData, setAddressData] = useState(address) 
 
-  // const API_WEBSITE = `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_API_KEY}`;
+  const API_WEBSITE = `https://geo.ipify.org/api/v2/country,city?apiKey=${process.env.REACT_APP_API_KEY}`;
 
-  // useEffect(() => {
-  //   axios
-  //     .get(`${API_WEBSITE}&ipAddress=192.212.174.101`)
-  //     .then((response) => {
-  //       return setAddressData(response.data);
-  //     })
-  // }, []);
+  const handleSubmitIp = ((ipvalue) => {
+    axios
+      .get(`${API_WEBSITE}&ipAddress=${ipvalue}`)
+      .then((response) => {
+        return setAddressData(response.data);
+      })
+  });
 
   return (
     <>
-      <Header />
+      <Header 
+        submitFunction={handleSubmitIp}
+      />
       <LocationBar 
         addressInfo={addressData}
-  />
+    />
       <Map 
         lat={addressData.location.lat}
         long={addressData.location.lng}
